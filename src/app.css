@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 button {
-    @apply bg-[#d7dcf0] text-[#6a7085] rounded-full h-14 w-14 shadow-md;
+    @apply bg-[#d7dcf0] text-[#6a7085] hover:bg-[#d7dcf0]/80 active:bg-[#d7dcf0] transition-all rounded-full h-14 w-14 shadow-md active:scale-90 focus:scale-90 focus:outline-none;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
 }
